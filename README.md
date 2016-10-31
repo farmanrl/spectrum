@@ -2,6 +2,13 @@
 
 This project was built for the purpose of project management, collaboration, and communication for Computer Science projects, from ideas, to prototypes, to startups. Accomplish your vision with Spectrum.
 
+[Prototype](https://spectrum-c5087.firebaseapp.com/)
+
+## Table of Contents
+ - [Create a Profile](#create-a-profile)
+ - [Manage Your Projects](#manage-your-projects)
+ - [Build the Future](#build-the-future)
+
 ##Create a Profile
 
 Customize your profile and showcase your projects, skills, and contributions.

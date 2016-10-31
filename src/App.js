@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import Navigation from './Navigation';
 import CreateUser from './CreateUser';
 import CreateProject from './CreateProject';
@@ -19,9 +18,10 @@ firebase.initializeApp(config);
 var styles = {
   toolbar: {
     display: 'flex',
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
     alignItems: 'center',
-    flexWrap: 'wrap'
+    flexWrap: 'wrap',
+    margin: '0px 20px 0px 20px'
   },
   title: {
     width: 180,
@@ -52,9 +52,6 @@ class App extends Component {
           <div style={styles.title}>
             <img src={logo} width={36} height={36} role="presentation" />
             <h2>Spectrum</h2>
-          </div>
-          <div style={styles.search}>
-            <Search />
           </div>
           <div style={styles.buttons}>
             <LoginUser />
