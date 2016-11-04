@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from './Navigation';
-import CreateUser from './CreateUser';
-import CreateProject from './CreateProject';
-import LoginUser from './LoginUser';
-import Search from './Search';
+import Toolbar from './Toolbar';
 import firebase from 'firebase';
 
 var config = {
@@ -53,11 +50,7 @@ class App extends Component {
             <img src={logo} width={36} height={36} role="presentation" />
             <h2>Spectrum</h2>
           </div>
-          <div style={styles.buttons}>
-            <LoginUser />
-            <CreateUser />
-            <CreateProject />
-          </div>
+          <Toolbar />
         </div>
         <Navigation />
       </div>
