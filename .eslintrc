@@ -19,6 +19,7 @@
     "node": true,
   },
   "extends": [
+    "airbnb",
     "eslint:recommended",
     "plugin:react/recommended"
   ],
@@ -29,6 +30,8 @@
     },
   },
   "plugins": [
-    "react"
+    "react",
+    "jsx-a11y",
+    "import"
   ],
 }
