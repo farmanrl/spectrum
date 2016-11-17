@@ -82,7 +82,86 @@
 <li><a href="#sec-3-2-13">3.2.13. ESLint, ESLint-Config-Airbnb :: Code standards</a></li>
 </ul>
 </li>
-<li><a href="#sec-3-3">3.3. Methodology</a></li>
+</ul>
+</li>
+<li>
+<a href="#sec-4">4. Code Overview</a>
+<ul>
+<li>
+<a href="#sec-4-1">4.1. ./</a>
+<ul>
+<li><a href="#sec-4-1-1">4.1.1. .babelrc</a></li>
+<li><a href="#sec-4-1-2">4.1.2. .eslintrc</a></li>
+<li><a href="#sec-4-1-3">4.1.3. .firebaserc</a></li>
+<li><a href="#sec-4-1-4">4.1.4. .gitignore</a></li>
+<li><a href="#sec-4-1-5">4.1.5. .circle.yml</a></li>
+<li><a href="#sec-4-1-6">4.1.6. firebase.json</a></li>
+<li><a href="#sec-4-1-7">4.1.7. firebase.rules.json</a></li>
+<li><a href="#sec-4-1-8">4.1.8. karma.conf.js</a></li>
+<li><a href="#sec-4-1-9">4.1.9. karma.entry.js</a></li>
+<li><a href="#sec-4-1-10">4.1.10. package.json</a></li>
+<li><a href="#sec-4-1-11">4.1.11. webpack.config.js</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-2">4.2. ./build</a></li>
+<li>
+<a href="#sec-4-3">4.3. ./src/</a>
+<ul>
+<li><a href="#sec-4-3-1">4.3.1. index.html</a></li>
+<li><a href="#sec-4-3-2">4.3.2. main.js</a></li>
+<li><a href="#sec-4-3-3">4.3.3. vendor.js</a></li>
+</ul>
+</li>
+<li>
+<a href="#sec-4-4">4.4. ./src/views/</a>
+<ul>
+<li><a href="#sec-4-4-1">4.4.1. root.js</a></li>
+<li><a href="#sec-4-4-2">4.4.2. routes.js</a></li>
+</ul>
+</li>
+<li>
+<a href="#sec-4-5">4.5. ./src/views/app</a>
+<ul>
+<li><a href="#sec-4-5-1">4.5.1. index.js</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-6">4.6. ./src/views/pages</a></li>
+<li>
+<a href="#sec-4-7">4.7. ./src/views/pages/sign-in</a>
+<ul>
+<li><a href="#sec-4-7-1">4.7.1. index.js</a></li>
+</ul>
+</li>
+<li>
+<a href="#sec-4-8">4.8. ./src/views/pages/home</a>
+<ul>
+<li><a href="#sec-4-8-1">4.8.1. index.js</a></li>
+</ul>
+</li>
+<li>
+<a href="#sec-4-9">4.9. ./src/views/pages/project-feed</a>
+<ul>
+<li><a href="#sec-4-9-1">4.9.1. index.js</a></li>
+</ul>
+</li>
+<li>
+<a href="#sec-4-10">4.10. ./src/views/pages/user-feed</a>
+<ul>
+<li><a href="#sec-4-10-1">4.10.1. index.js</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-11">4.11. ./src/views/components</a></li>
+<li>
+<a href="#sec-4-12">4.12. ./src/core</a>
+<ul>
+<li><a href="#sec-4-12-1">4.12.1. reducers.js</a></li>
+<li><a href="#sec-4-12-2">4.12.2. store.js</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-13">4.13. ./src/core/auth</a></li>
+<li><a href="#sec-4-14">4.14. ./src/core/firebase</a></li>
+<li><a href="#sec-4-15">4.15. ./src/core/projects</a></li>
+<li><a href="#sec-4-16">4.16. ./src/core/users</a></li>
 </ul>
 </li>
 </ul>
@@ -109,9 +188,9 @@ train and recruit motivated and talented developers to build the app through ope
 <a id="create-a-profile" class="anchor" href="#create-a-profile" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Create a Profile<a id="sec-2-1" name="sec-2-1"></a>
 </h2>
 
-<p>Login with authorized providers like Google, Facebook, and Github. Create a profile and showcase your
-skills and contributions. Partner with other users to spread your network and foster connections.
-Link your Github, Slack, Website, and other project management tools.</p>
+<p>Login with authorized providers like Google, Facebook, and Github. Create a profile that showcases
+your skills and contributions. View other's profiles and see what they've been working on.
+Partner with other users to spread your network and foster connections.</p>
 
 <h2>
 <a id="manage-your-projects" class="anchor" href="#manage-your-projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Manage Your Projects<a id="sec-2-2" name="sec-2-2"></a>
@@ -119,19 +198,29 @@ Link your Github, Slack, Website, and other project management tools.</p>
 
 <p>Create projects and recruit team members through our management system. Get matched with designers,
 developers, and other roles critical for your projects. Whether you're starting from scratch with an
-idea, working on an active prototype, or ready to form a startup, Spectrum will work with you.</p>
+idea, working on an active prototype, or ready to form a startup, Spectrum provide all the tools you
+need to manage your projects.</p>
 
 <h2>
 <a id="build-the-future" class="anchor" href="#build-the-future" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Build the Future<a id="sec-2-3" name="sec-2-3"></a>
 </h2>
 
 <p>Check out featured content and search our database for users and projects. From the student to
-professional, your experience is tailored for your needs . Become a part of a new generation of
-designers, developers, and other aspiring individuals, and work together to make dreams come true.</p>
+professional, your experience is tailored for your needs. Become a part of a new generation of
+designers, developers, and other aspiring individuals, and maximize productivity using integration
+with Github, Slack, and other project management utilities and services.</p>
 
 <h1>
 <a id="how-its-built" class="anchor" href="#how-its-built" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How it's Built<a id="sec-3" name="sec-3"></a>
 </h1>
+
+<p>Our system is designed with a simple, cohesive, and modern experience in mind, for both clients and
+developers alike. With these technologies, we are at the forefront of app development, and are best
+prepared to take on the challenges of project scope and scale as we continue building our project.</p>
+
+<p>For this purpose, I have looked towards <a href="https://github.com/r-park/todo-react-redux">Todo</a>, a simple Todo app example built with React, Redux, and
+Firebase. The back-end system and boilerplate were simple to implement thanks to their hard work and
+documentation. A shining example of how open-source development can benefit everyone.</p>
 
 <h2>
 <a id="essential-technologies" class="anchor" href="#essential-technologies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Essential Technologies<a id="sec-3-1" name="sec-3-1"></a>
@@ -457,17 +546,360 @@ This package provides Airbnb's .eslintrc as an extensible shared config.</p>
 </li>
 </ul>
 
+<h1>
+<a id="code-overview" class="anchor" href="#code-overview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Code Overview<a id="sec-4" name="sec-4"></a>
+</h1>
+
+<p>An overview of everything that's going on inside of Spectrum.</p>
+
 <h2>
-<a id="methodology" class="anchor" href="#methodology" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Methodology<a id="sec-3-3" name="sec-3-3"></a>
+<a id="" class="anchor" href="#" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>./<a id="sec-4-1" name="sec-4-1"></a>
 </h2>
 
-<p>Our system is designed with a simple, cohesive, and modern experience in mind, for both clients and
-developers alike. With these technologies, we are at the forefront of app development, and are best
-prepared to take on the challenges of project scope and scale as we continue building our project.</p>
+<p>Contains boilerplate for our application.</p>
 
-<p>For this purpose, I have looked towards <a href="https://github.com/r-park/todo-react-redux">Todo</a>, a simple Todo app example built with React, Redux, and
-Firebase. The back-end system and boilerplate were simple to implement thanks to their hard work and
-documentation. A shining example of how open-source development can benefit everyone.</p>
+<h3>
+<a id="babelrc" class="anchor" href="#babelrc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>.babelrc<a id="sec-4-1-1" name="sec-4-1-1"></a>
+</h3>
+
+<p>Rules for our compiler to use es2015 syntax, among other plugins</p>
+
+<h3>
+<a id="eslintrc" class="anchor" href="#eslintrc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>.eslintrc<a id="sec-4-1-2" name="sec-4-1-2"></a>
+</h3>
+
+<p>Rules for our linter to use the Airbnb style guide, as well as recommended React and es2015 rules,
+among other configurations.</p>
+
+<h3>
+<a id="firebaserc" class="anchor" href="#firebaserc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>.firebaserc<a id="sec-4-1-3" name="sec-4-1-3"></a>
+</h3>
+
+<p>Rules for deployment of our project on Firebase.</p>
+
+<h3>
+<a id="gitignore" class="anchor" href="#gitignore" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>.gitignore<a id="sec-4-1-4" name="sec-4-1-4"></a>
+</h3>
+
+<p>Files, extensions, and folders to be ignored by git.</p>
+
+<h3>
+<a id="circleyml" class="anchor" href="#circleyml" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>.circle.yml<a id="sec-4-1-5" name="sec-4-1-5"></a>
+</h3>
+
+<p>Circle inspects our code before each build to infer your settings, dependencies, and test steps.
+We can augment or override our inferred commands, and add deployment commands that will run after
+a successful build.</p>
+
+<h3>
+<a id="firebasejson" class="anchor" href="#firebasejson" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>firebase.json<a id="sec-4-1-6" name="sec-4-1-6"></a>
+</h3>
+
+<p>Configuration for our firebase databasing and hosting.</p>
+
+<h3>
+<a id="firebaserulesjson" class="anchor" href="#firebaserulesjson" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>firebase.rules.json<a id="sec-4-1-7" name="sec-4-1-7"></a>
+</h3>
+
+<p>Rules for authorization and databasing.</p>
+
+<h3>
+<a id="karmaconfjs" class="anchor" href="#karmaconfjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>karma.conf.js<a id="sec-4-1-8" name="sec-4-1-8"></a>
+</h3>
+
+<p>Sets up our testing environment for Jasmine and webpack.</p>
+
+<h3>
+<a id="karmaentryjs" class="anchor" href="#karmaentryjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>karma.entry.js<a id="sec-4-1-9" name="sec-4-1-9"></a>
+</h3>
+
+<p>Discover and load all test files recursively.</p>
+
+<h3>
+<a id="packagejson" class="anchor" href="#packagejson" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>package.json<a id="sec-4-1-10" name="sec-4-1-10"></a>
+</h3>
+
+<p>Controls our app configuration, including project information, scripts, and dependencies.</p>
+
+<h3>
+<a id="webpackconfigjs" class="anchor" href="#webpackconfigjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>webpack.config.js<a id="sec-4-1-11" name="sec-4-1-11"></a>
+</h3>
+
+<p>Configuration for our build environment.</p>
+
+<h2>
+<a id="build" class="anchor" href="#build" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>./build<a id="sec-4-2" name="sec-4-2"></a>
+</h2>
+
+<p>Generated when we build our project using webpack, contains an <code>index.html</code> file with a <code>bundle.js</code>
+containing our app code, and a <code>vendor.bundle.js</code> file containing our dependencies.</p>
+
+<h2>
+<a id="src" class="anchor" href="#src" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>./src/<a id="sec-4-3" name="sec-4-3"></a>
+</h2>
+
+<p>Contains all the front-end and back-end framework for our application.</p>
+
+<h3>
+<a id="indexhtml" class="anchor" href="#indexhtml" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>index.html<a id="sec-4-3-1" name="sec-4-3-1"></a>
+</h3>
+
+<pre><code>&lt;body&gt;
+  &lt;div id="root"&gt;&lt;/div&gt;
+&lt;/body&gt;
+</code></pre>
+
+<p>This is the <code>root</code> element <code>&lt;div&gt;</code> defined in our index.html that holds our application and is packaged
+when we build our application using webpack, which is then rendered to the <code>DOM</code>.</p>
+
+<h3>
+<a id="mainjs" class="anchor" href="#mainjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>main.js<a id="sec-4-3-2" name="sec-4-3-2"></a>
+</h3>
+
+<pre><code>const store = configureStore();
+const syncedHistory = syncHistoryWithStore(browserHistory, store);
+const rootElement = document.getElementById('root');
+</code></pre>
+
+<p><code>store</code> creates a redux <code>store</code> for our application configured with additional middleware and devTools,
+and holds our <code>reducers</code> and <code>initialstate</code>.</p>
+
+<p><code>syncedHistory</code> creates enhanced browser history that syncs navigation with the store. We provide
+our own <code>reducer</code> function that will receive actions of type <code>LOCATION_CHANGE</code> and return the payload
+merged into the locationBeforeTransitions property of the routing state.</p>
+
+<p><code>rootElement</code> is the element that all components are composed to.</p>
+
+<p><code>syncedHistory</code></p>
+
+<pre><code>function render(Root) {
+  ReactDOM.render(
+    &lt;AppContainer&gt;
+      &lt;Root history={syncedHistory} store={store} /&gt;
+    &lt;/AppContainer&gt;,
+    rootElement
+  );
+}
+</code></pre>
+
+<p><code>&lt;AppContainer&gt;</code> is a component provided by React Hot Loader, a plugin for Webpack that allows
+instantaneous live refresh without losing state while editing React components.</p>
+
+<pre><code>initAuth(store.dispatch)
+  .then(() =&gt; render(Root))
+  .catch(error =&gt; console.error(error)); // eslint-disable-line no-console
+</code></pre>
+
+<p>After initial authorization has completed, then the application is rendered.</p>
+
+<h3>
+<a id="vendorjs" class="anchor" href="#vendorjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>vendor.js<a id="sec-4-3-3" name="sec-4-3-3"></a>
+</h3>
+
+<p>For big web apps it’s not efficient to put all code into a single file, especially if some blocks of
+code are only required under some circumstances. Webpack has a feature to split your codebase into
+“chunks” which are loaded on demand.</p>
+
+<p>To split your app into 2 files, say <code>app.js</code> and <code>vendor.js</code>, you can <code>require</code> the vendor files in
+<code>vendor.js</code>. Then pass this name to the <code>CommonsChunkPlugin</code> as shown below.</p>
+
+<p>This will remove all modules in the vendor chunk from the app chunk. The bundle.js will now contain
+just your app code, without any of its dependencies. These are in vendor.bundle.js.</p>
+
+<h2>
+<a id="srcviews" class="anchor" href="#srcviews" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>./src/views/<a id="sec-4-4" name="sec-4-4"></a>
+</h2>
+
+<p>Front-End Framework.</p>
+
+<h3>
+<a id="rootjs" class="anchor" href="#rootjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>root.js<a id="sec-4-4-1" name="sec-4-4-1"></a>
+</h3>
+
+<pre><code>&lt;Provider store={store}&gt;
+  &lt;Router history={history} routes={getRoutes(store.getState)} /&gt;
+&lt;/Provider&gt;
+</code></pre>
+
+<p><code>&lt;Provider store&gt;</code> Makes the Redux <code>store</code> available to the <code>connect()</code> calls in the component hierarchy
+below. Normally, you can’t use <code>connect()</code> without wrapping the root component in <code>&lt;Provider&gt;</code>.</p>
+
+<p><code>&lt;Router /&gt;</code> is initialized with a <code>history</code>, and a <code>route</code> configuration - a set of instructions that
+tell a router how to try to match the URL and what code to run when it does.</p>
+
+<h3>
+<a id="routesjs" class="anchor" href="#routesjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>routes.js<a id="sec-4-4-2" name="sec-4-4-2"></a>
+</h3>
+
+<pre><code>export const paths = {
+  ROOT: '/',
+  SIGN_IN: '/sign-in',
+  TASKS: '/'
+};
+
+...
+export const getRoutes = getState =&gt; {
+  return {
+    path: paths.ROOT,
+    component: App,
+    childRoutes: [
+      {
+        indexRoute: {
+          component: Projects,
+          onEnter: requireAuth(getState)
+        }
+      },
+      {
+        path: paths.SIGN_IN,
+        component: SignIn,
+        onEnter: requireUnauth(getState)
+      }
+    ]
+  };
+};
+</code></pre>
+
+<p><code>paths</code> is the indexing we'd like to for our URL routing.</p>
+
+<p>Imagine we'd like to render another component inside of <code>App</code> when the URL is <code>/</code>. Currently,
+<code>this.props.children</code> inside of <code>App</code>'s <code>render</code> method is <code>undefined</code> in this case. We can use
+<code>childRoutes</code> to specify a <code>route</code> for the component to be rendered .</p>
+
+<p><code>Routes</code> may also define <code>onEnter</code> and <code>onLeave</code> hooks that are invoked once a transition has been
+confirmed. These hooks are useful for various things like requiring <code>auth</code> when a <code>route</code> is entered
+and saving stuff to persistent storage before a <code>route</code> unmounts.</p>
+
+<h2>
+<a id="srcviewsapp" class="anchor" href="#srcviewsapp" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>./src/views/app<a id="sec-4-5" name="sec-4-5"></a>
+</h2>
+
+<h3>
+<a id="indexjs" class="anchor" href="#indexjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>index.js<a id="sec-4-5-1" name="sec-4-5-1"></a>
+</h3>
+
+<pre><code>  render() {
+    return (
+      &lt;div&gt;
+        &lt;Header
+          authenticated={this.props.auth.authenticated}
+          signOut={this.props.signOut}
+        /&gt;
+
+        &lt;main className="main"&gt;{this.props.children}&lt;/main&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+</code></pre>
+
+<p>Container for the <code>Header</code> of the application, as well as any components rendered to it via the <code>router</code>.</p>
+
+<h2>
+<a id="srcviewspages" class="anchor" href="#srcviewspages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>./src/views/pages<a id="sec-4-6" name="sec-4-6"></a>
+</h2>
+
+<p>Controls the various pages of the application.</p>
+
+<h2>
+<a id="srcviewspagessign-in" class="anchor" href="#srcviewspagessign-in" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>./src/views/pages/sign-in<a id="sec-4-7" name="sec-4-7"></a>
+</h2>
+
+<p>If user fails to authenticate, a <code>sign-in</code> page is displayed.</p>
+
+<h3>
+<a id="indexjs-1" class="anchor" href="#indexjs-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>index.js<a id="sec-4-7-1" name="sec-4-7-1"></a>
+</h3>
+
+<p>Controls sign-in buttons with actions to different providers</p>
+
+<h2>
+<a id="srcviewspageshome" class="anchor" href="#srcviewspageshome" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>./src/views/pages/home<a id="sec-4-8" name="sec-4-8"></a>
+</h2>
+
+<p>If user selects Home in navigation, <code>home</code> will be displayed.</p>
+
+<h3>
+<a id="indexjs-2" class="anchor" href="#indexjs-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>index.js<a id="sec-4-8-1" name="sec-4-8-1"></a>
+</h3>
+
+<p>Displays a list of users and projects, as well as other content relevant to the user.</p>
+
+<h2>
+<a id="srcviewspagesproject-feed" class="anchor" href="#srcviewspagesproject-feed" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>./src/views/pages/project-feed<a id="sec-4-9" name="sec-4-9"></a>
+</h2>
+
+<p>If user selects Project Feed in navigation, <code>project-feed</code> will be displayed.</p>
+
+<h3>
+<a id="indexjs-3" class="anchor" href="#indexjs-3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>index.js<a id="sec-4-9-1" name="sec-4-9-1"></a>
+</h3>
+
+<p>Displays a list of Projects based on a series of filters.</p>
+
+<h2>
+<a id="srcviewspagesuser-feed" class="anchor" href="#srcviewspagesuser-feed" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>./src/views/pages/user-feed<a id="sec-4-10" name="sec-4-10"></a>
+</h2>
+
+<p>If user selects User Feed in navigation, this page will be displayed.</p>
+
+<h3>
+<a id="indexjs-4" class="anchor" href="#indexjs-4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>index.js<a id="sec-4-10-1" name="sec-4-10-1"></a>
+</h3>
+
+<p>Displays a list of users based on a series of filters.</p>
+
+<h2>
+<a id="srcviewscomponents" class="anchor" href="#srcviewscomponents" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>./src/views/components<a id="sec-4-11" name="sec-4-11"></a>
+</h2>
+
+<p>Holds all of our UI components.</p>
+
+<h2>
+<a id="srccore" class="anchor" href="#srccore" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>./src/core<a id="sec-4-12" name="sec-4-12"></a>
+</h2>
+
+<p>Back-End Framework.</p>
+
+<h3>
+<a id="reducersjs" class="anchor" href="#reducersjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>reducers.js<a id="sec-4-12-1" name="sec-4-12-1"></a>
+</h3>
+
+<p>Combines all our individual reducers.</p>
+
+<h3>
+<a id="storejs" class="anchor" href="#storejs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>store.js<a id="sec-4-12-2" name="sec-4-12-2"></a>
+</h3>
+
+<p>Configures our Redux <code>store</code> with the <code>thunk</code> middleware for handling asyncronous <code>actions</code>.
+Passes through our <code>reducers</code> as well as an <code>initialState</code>.</p>
+
+<h2>
+<a id="srccoreauth" class="anchor" href="#srccoreauth" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>./src/core/auth<a id="sec-4-13" name="sec-4-13"></a>
+</h2>
+
+<p>Holds our <code>actions</code>, <code>types</code>, <code>reducer</code>, <code>selectors</code>, and <code>models</code> for Redux to control
+<code>authorization</code> <code>state</code> and <code>actions</code>.</p>
+
+<h2>
+<a id="srccorefirebase" class="anchor" href="#srccorefirebase" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>./src/core/firebase<a id="sec-4-14" name="sec-4-14"></a>
+</h2>
+
+<p>Holds our <code>actions</code>, <code>types</code>, <code>reducer</code>, <code>selectors</code>, and <code>models</code> for Redux to control
+<code>firebase</code> <code>state</code> and <code>actions</code>.</p>
+
+<h2>
+<a id="srccoreprojects" class="anchor" href="#srccoreprojects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>./src/core/projects<a id="sec-4-15" name="sec-4-15"></a>
+</h2>
+
+<p>Holds our <code>actions</code>, <code>types</code>, <code>reducer</code>, <code>selectors</code>, and <code>models</code> for Redux to control
+<code>projects</code> <code>state</code> and <code>actions</code>.</p>
+
+<h2>
+<a id="srccoreusers" class="anchor" href="#srccoreusers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>./src/core/users<a id="sec-4-16" name="sec-4-16"></a>
+</h2>
+
+<p>Holds our <code>actions</code>, <code>types</code>, <code>reducer</code>, <code>selectors</code>, and <code>models</code> for Redux to control
+<code>user</code> <code>state</code> and <code>actions</code>.</p>
 
 <p><em>Much of this was lifted from existing documentation. Thanks Devs!</em></p>
       </section>
