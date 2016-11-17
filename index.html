@@ -1,0 +1,465 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Spectrum by farmanrl</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/farmanrl/spectrum">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/farmanrl/spectrum/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/farmanrl/spectrum/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Spectrum</h1>
+          <p>Project management, collaboration, and communication for Computer Science</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/farmanrl">farmanrl</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <div id="table-of-contents">
+<h2>
+<a id="table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Spectrum</a></li>
+<li>
+<a href="#sec-2">2. Product Description</a>
+<ul>
+<li><a href="#sec-2-1">2.1. Create a Profile</a></li>
+<li><a href="#sec-2-2">2.2. Manage Your Projects</a></li>
+<li><a href="#sec-2-3">2.3. Build the Future</a></li>
+</ul>
+</li>
+<li>
+<a href="#sec-3">3. How it's Built</a>
+<ul>
+<li>
+<a href="#sec-3-1">3.1. Essential Technologies</a>
+<ul>
+<li><a href="#sec-3-1-1">3.1.1. GitHub</a></li>
+<li><a href="#sec-3-1-2">3.1.2. HTML/CSS</a></li>
+<li><a href="#sec-3-1-3">3.1.3. Javascript</a></li>
+<li><a href="#sec-3-1-4">3.1.4. WebDev</a></li>
+</ul>
+</li>
+<li>
+<a href="#sec-3-2">3.2. Framework</a>
+<ul>
+<li><a href="#sec-3-2-1">3.2.1. Create-React-App :: Boilerplate</a></li>
+<li><a href="#sec-3-2-2">3.2.2. React.js :: Front-end framework</a></li>
+<li><a href="#sec-3-2-3">3.2.3. Firebase :: Back-end framework</a></li>
+<li><a href="#sec-3-2-4">3.2.4. Jasmine :: Testing framework</a></li>
+<li><a href="#sec-3-2-5">3.2.5. React-Redux :: Handles state and actions within the application</a></li>
+<li><a href="#sec-3-2-6">3.2.6. React-Router :: Handles URL and paths within the application</a></li>
+<li><a href="#sec-3-2-7">3.2.7. React-Router-Redux :: Keeps router in sync with application state</a></li>
+<li><a href="#sec-3-2-8">3.2.8. Redux-Thunk :: Middleware that handles asynchronous actions</a></li>
+<li><a href="#sec-3-2-9">3.2.9. Reselect :: Selector library for React-Redux state</a></li>
+<li><a href="#sec-3-2-10">3.2.10. Immutable :: Manages React-Redux state</a></li>
+<li><a href="#sec-3-2-11">3.2.11. React-Bootstrap :: UI Library</a></li>
+<li><a href="#sec-3-2-12">3.2.12. ES2015, Babel :: Extended JavaScript functionality</a></li>
+<li><a href="#sec-3-2-13">3.2.13. ESLint, ESLint-Config-Airbnb :: Code standards</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<p></p>
+</div>
+
+<h1>
+<a id="spectrum" class="anchor" href="#spectrum" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Spectrum<a id="sec-1" name="sec-1"></a>
+</h1>
+
+<p><a href="https://github.com/farmanrl/spectrum">GitHub</a> | <a href="https://spectrum-c5087.firebaseapp.com/">Prototype</a></p>
+
+<h1>
+<a id="product-description" class="anchor" href="#product-description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Product Description<a id="sec-2" name="sec-2"></a>
+</h1>
+
+<p>Spectrum is project management and networking software for collaboration and communication between
+enterprising individuals, small teams, and startups.</p>
+
+<h2>
+<a id="create-a-profile" class="anchor" href="#create-a-profile" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Create a Profile<a id="sec-2-1" name="sec-2-1"></a>
+</h2>
+
+<p>Login with authorized providers like Google, Facebook, and Github. Create a profile and showcase your
+skills and contributions. Partner with other users to spread your network and foster connections.
+Link your Github, Slack, Website, and other project management tools.</p>
+
+<h2>
+<a id="manage-your-projects" class="anchor" href="#manage-your-projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Manage Your Projects<a id="sec-2-2" name="sec-2-2"></a>
+</h2>
+
+<p>Create projects and recruit team members through our management system. Get matched with designers,
+developers, and other roles critical for your projects. Whether you're starting from scratch with an
+idea, working on an active prototype, or ready to form a startup, Spectrum will work with you.</p>
+
+<h2>
+<a id="build-the-future" class="anchor" href="#build-the-future" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Build the Future<a id="sec-2-3" name="sec-2-3"></a>
+</h2>
+
+<p>Check out featured content and search our database for users and projects. From the student to
+professional, your experience is tailored for your needs . Become a part of a new generation of
+designers, developers, and other aspiring individuals, and work together to make dreams come true.</p>
+
+<h1>
+<a id="how-its-built" class="anchor" href="#how-its-built" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How it's Built<a id="sec-3" name="sec-3"></a>
+</h1>
+
+<h2>
+<a id="essential-technologies" class="anchor" href="#essential-technologies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Essential Technologies<a id="sec-3-1" name="sec-3-1"></a>
+</h2>
+
+<p>This is a list of basic technologies powering our webapp.</p>
+
+<h3>
+<a id="github" class="anchor" href="#github" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GitHub<a id="sec-3-1-1" name="sec-3-1-1"></a>
+</h3>
+
+<p>Version Control and project management.</p>
+
+<ul>
+<li>  <a href="https://guides.github.com/">Github Guide</a>
+</li>
+<li>  <a href="https://try.github.io/levels/1/challenges/1">Github Tutorial</a>
+</li>
+</ul>
+
+<h3>
+<a id="htmlcss" class="anchor" href="#htmlcss" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>HTML/CSS<a id="sec-3-1-2" name="sec-3-1-2"></a>
+</h3>
+
+<p>HTML (HyperText Markup Language) is the standard markup language used to create websites.
+HTML is rendered into Document Object Model (DOM), which is read by browser to construct web page.</p>
+
+<ul>
+<li>  <a href="http://www.htmldog.com/guides/html/beginner/gettingstarted/">HTML Guide</a>
+</li>
+</ul>
+
+<p>CSS describes the presentation of HTML content - what does it look like?</p>
+
+<ul>
+<li>  <a href="http://www.htmldog.com/guides/css/beginner/">CSS Guide</a>
+</li>
+</ul>
+
+<p>Putting these two together, we can start building for the web.</p>
+
+<ul>
+<li>  <a href="http://learn.shayhowe.com/html-css/">HTML/CSS Guide</a>
+</li>
+<li>  <a href="https://www.codecademy.com/learn/web">HTML/CSS Tutorial</a>
+</li>
+</ul>
+
+<h3>
+<a id="javascript" class="anchor" href="#javascript" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Javascript<a id="sec-3-1-3" name="sec-3-1-3"></a>
+</h3>
+
+<p>Javascript is a programming language that can add interaction and extend the functionality of websites.
+JavaScript runs on the client side of the web, which can be used to control how the web pages reacts
+on the occurrence of an event. JavaScript is an easy to learn and also powerful scripting language,
+widely used for controlling web page behaviour.</p>
+
+<ul>
+<li>  <a href="https://www.codecademy.com/learn/javascript">Tutorial</a>
+</li>
+</ul>
+
+<h3>
+<a id="webdev" class="anchor" href="#webdev" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>WebDev<a id="sec-3-1-4" name="sec-3-1-4"></a>
+</h3>
+
+<p>Putting it all together.</p>
+
+<ul>
+<li>  <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">Guide</a>
+</li>
+<li>  <a href="https://www.codecademy.com/courses/html-javascript-css/0/1">Tutorial</a>
+</li>
+</ul>
+
+<h2>
+<a id="framework" class="anchor" href="#framework" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Framework<a id="sec-3-2" name="sec-3-2"></a>
+</h2>
+
+<p>This is the list of packages installed through npm that we require through node<sub>modules</sub></p>
+
+<h3>
+<a id="create-react-app--boilerplate" class="anchor" href="#create-react-app--boilerplate" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Create-React-App :: Boilerplate<a id="sec-3-2-1" name="sec-3-2-1"></a>
+</h3>
+
+<p>Create React apps with no build configuration.</p>
+
+<ul>
+<li>  <a href="https://github.com/facebookincubator/create-react-app#getting-started">Get Started</a>
+</li>
+<li>  <a href="https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md">User Guide</a>
+</li>
+</ul>
+
+<h3>
+<a id="reactjs--front-end-framework" class="anchor" href="#reactjs--front-end-framework" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>React.js :: Front-end framework<a id="sec-3-2-2" name="sec-3-2-2"></a>
+</h3>
+
+<p>A Javascript Library for building User Interfaces</p>
+
+<ul>
+<li>  <a href="https://facebook.github.io/react/docs/hello-world.html">Get Started</a>
+</li>
+<li>  <a href="https://facebook.github.io/react/tutorial/tutorial.html">Take the Tutorial</a>
+</li>
+</ul>
+
+<h3>
+<a id="firebase--back-end-framework" class="anchor" href="#firebase--back-end-framework" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Firebase :: Back-end framework<a id="sec-3-2-3" name="sec-3-2-3"></a>
+</h3>
+
+<p>Firebase Authentication provides backend services, easy-to-use SDKs, and ready-made UI libraries to
+authenticate users to your app. It supports authentication using passwords, popular federated identity
+providers like Google, Facebook and Twitter, and more.</p>
+
+<ul>
+<li>  <a href="https://firebase.google.com/docs/auth/web/manage-users">Firebase Authentication</a>
+</li>
+</ul>
+
+<p>The Firebase Realtime Database is a cloud-hosted database. Data is stored as JSON and synchronized in
+realtime to every connected client. When you build cross-platform apps with our iOS, Android, and
+JavaScript SDKs, all of your clients share one Realtime Database instance and automatically receive
+updates with the newest data.</p>
+
+<ul>
+<li>  <a href="https://firebase.google.com/docs/database/web/start">Firebase Database</a>
+</li>
+</ul>
+
+<p>With Firebase Hosting, you can quickly and easily deploy web apps and static content to a global
+content-delivery network (CDN) with a single command.</p>
+
+<ul>
+<li>  <a href="https://firebase.google.com/docs/hosting/">Firebase Hosting</a>
+</li>
+</ul>
+
+<h3>
+<a id="jasmine--testing-framework" class="anchor" href="#jasmine--testing-framework" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Jasmine :: Testing framework<a id="sec-3-2-4" name="sec-3-2-4"></a>
+</h3>
+
+<p>Jasmine is a behavior-driven development framework for testing JavaScript code. It does not depend on
+any other JavaScript frameworks. It does not require a DOM. And it has a clean, obvious syntax so that
+you can easily write tests.</p>
+
+<ul>
+<li>  <a href="https://jasmine.github.io/2.5/introduction">Get Started</a>
+</li>
+</ul>
+
+<h3>
+<a id="react-redux--handles-state-and-actions-within-the-application" class="anchor" href="#react-redux--handles-state-and-actions-within-the-application" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>React-Redux :: Handles state and actions within the application<a id="sec-3-2-5" name="sec-3-2-5"></a>
+</h3>
+
+<p>Redux is a predictable state container for JavaScript apps.</p>
+
+<p>It helps you write applications that behave consistently, run in different environments (client,
+server, and native), and are easy to test. On top of that, it provides a great developer experience,
+such as live code editing combined with a time traveling debugger.</p>
+
+<p>The whole state of your app is stored in an object tree inside a single store.
+The only way to change the state tree is to emit an action, an object describing what happened.
+To specify how the actions transform the state tree, you write pure reducers.</p>
+
+<ul>
+<li>  <a href="http://redux.js.org/">Get Started</a>
+</li>
+</ul>
+
+<h3>
+<a id="react-router--handles-url-and-paths-within-the-application" class="anchor" href="#react-router--handles-url-and-paths-within-the-application" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>React-Router :: Handles URL and paths within the application<a id="sec-3-2-6" name="sec-3-2-6"></a>
+</h3>
+
+<p>React Router is a complete routing library for React.
+React Router keeps your UI in sync with the URL. It has a simple API with powerful features like lazy
+code loading, dynamic route matching, and location transition handling built right in. Make the URL
+your first thought, not an after-thought.</p>
+
+<ul>
+<li>  <a href="https://github.com/ReactTraining/react-router/tree/master/docs">Get Started</a>
+</li>
+<li>  <a href="https://github.com/reactjs/react-router-tutorial">Tutorial</a>
+</li>
+</ul>
+
+<h3>
+<a id="react-router-redux--keeps-router-in-sync-with-application-state" class="anchor" href="#react-router-redux--keeps-router-in-sync-with-application-state" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>React-Router-Redux :: Keeps router in sync with application state<a id="sec-3-2-7" name="sec-3-2-7"></a>
+</h3>
+
+<p>You're a smart person. You use Redux to manage your application state. You use React Router to do
+routing. All is good.</p>
+
+<p>But the two libraries don't coordinate. You want to do time travel with your application state, but
+React Router doesn't navigate between pages when you replay actions. It controls an important part of
+application state: the URL.</p>
+
+<p>This library helps you keep that bit of state in sync with your Redux store. We keep a copy of the
+current location hidden in state. When you rewind your application state with a tool like Redux
+DevTools, that state change is propagated to React Router so it can adjust the component tree
+accordingly. You can jump around in state, rewinding, replaying, and resetting as much as you'd like,
+and this library will ensure the two stay in sync at all times.</p>
+
+<p>This library allows you to use React Router's APIs as they are documented. And, you can use redux like
+you normally would, with a single app state. The library simply enhances a history instance to allow
+it to synchronize any changes it receives into application state.</p>
+
+<ul>
+<li>  <a href="https://github.com/reactjs/react-router-redux">Get Started</a>
+</li>
+</ul>
+
+<h3>
+<a id="redux-thunk--middleware-that-handles-asynchronous-actions" class="anchor" href="#redux-thunk--middleware-that-handles-asynchronous-actions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Redux-Thunk :: Middleware that handles asynchronous actions<a id="sec-3-2-8" name="sec-3-2-8"></a>
+</h3>
+
+<p>Redux Thunk middleware allows you to write action creators that return a function instead of an action.
+The thunk can be used to delay the dispatch of an action, or to dispatch only if a certain condition is
+met. The inner function receives the store methods dispatch and getState as parameters.</p>
+
+<ul>
+<li>  <a href="https://github.com/gaearon/redux-thunk">Get Started</a>
+</li>
+</ul>
+
+<h3>
+<a id="reselect--selector-library-for-react-redux-state" class="anchor" href="#reselect--selector-library-for-react-redux-state" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Reselect :: Selector library for React-Redux state<a id="sec-3-2-9" name="sec-3-2-9"></a>
+</h3>
+
+<p>Reselect is a simple library for creating memoized, composable selector functions.</p>
+
+<p>Selectors can compute derived data, allowing Redux to store the minimal possible state.
+Selectors are efficient. A selector is not recomputed unless one of its arguments change.
+Selectors are composable. They can be used as input to other selectors.</p>
+
+<ul>
+<li>  <a href="https://github.com/reactjs/reselect">Get Started</a>
+</li>
+</ul>
+
+<h3>
+<a id="immutable--manages-react-redux-state" class="anchor" href="#immutable--manages-react-redux-state" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Immutable :: Manages React-Redux state<a id="sec-3-2-10" name="sec-3-2-10"></a>
+</h3>
+
+<p>Immutable data cannot be changed once created, leading to much simpler application development, no
+defensive copying, and enabling advanced memoization and change detection techniques with simple logic.
+Persistent data presents a mutative API which does not update the data in-place, but instead always
+yields new updated data.</p>
+
+<p>Immutable.js provides many Persistent Immutable data structures including: List, Stack, Map,
+OrderedMap, Set, OrderedSet and Record.</p>
+
+<ul>
+<li>  <a href="https://facebook.github.io/immutable-js/">Get Started</a>
+</li>
+</ul>
+
+<h3>
+<a id="react-bootstrap--ui-library" class="anchor" href="#react-bootstrap--ui-library" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>React-Bootstrap :: UI Library<a id="sec-3-2-11" name="sec-3-2-11"></a>
+</h3>
+
+<p>React-Bootstrap is a library of reusable front-end components.</p>
+
+<ul>
+<li>  <a href="https://react-bootstrap.github.io/components.html">Get Started</a>
+</li>
+</ul>
+
+<h3>
+<a id="es2015-babel--extended-javascript-functionality" class="anchor" href="#es2015-babel--extended-javascript-functionality" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ES2015, Babel :: Extended JavaScript functionality<a id="sec-3-2-12" name="sec-3-2-12"></a>
+</h3>
+
+<p>ES2015 is a pseudonym for the latest version of the JavaScript programming language to be approved by
+ECMA International, the standards group responsible for vetting and approving different versions of
+the language.</p>
+
+<p>Despite all of the hype and noise, ES2015 isn’t introducing anything other than improvements to the
+JavaScript language and a few new features.</p>
+
+<ul>
+<li>  <a href="https://babeljs.io/docs/learn-es2015/">ES2015</a>
+</li>
+</ul>
+
+<p>Babel is a next generation compiler with support for the latest version of JavaScript through syntax
+transformers. These plugins allow you to use new syntax, right now without waiting for browser support.</p>
+
+<ul>
+<li>  <a href="https://babeljs.io/">Babel</a>
+</li>
+</ul>
+
+<h3>
+<a id="eslint-eslint-config-airbnb--code-standards" class="anchor" href="#eslint-eslint-config-airbnb--code-standards" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ESLint, ESLint-Config-Airbnb :: Code standards<a id="sec-3-2-13" name="sec-3-2-13"></a>
+</h3>
+
+<p>ESLint is an open source JavaScript linting utility.
+Code linting is a type of static analysis that is frequently used to find problematic patterns or code
+that doesn’t adhere to certain style guidelines. There are code linters for most programming languages,
+and compilers sometimes incorporate linting into the compilation process.</p>
+
+<p>JavaScript, being a dynamic and loosely-typed language, is especially prone to developer error.
+Without the benefit of a compilation process, JavaScript code is typically executed in order to find
+syntax or other errors. Linting tools like ESLint allow developers to discover problems with their
+JavaScript code without executing it.</p>
+
+<p>The primary reason ESLint was created was to allow developers to create their own linting rules.
+ESLint is designed to have all rules completely pluggable. The default rules are written just like any
+plugin rules would be. They can all follow the same pattern, both for the rules themselves as well as
+tests. While ESLint will ship with some built-in rules to make it useful from the start, you’ll be able
+to dynamically load rules at any point in time.</p>
+
+<ul>
+<li>  <a href="http://codewinds.com/blog/2015-04-02-emacs-flycheck-eslint-jsx.html">ESLint</a>
+</li>
+</ul>
+
+<p>Airbnb Javascript Style Guide is a mostly reasonable approach to JavaScript
+This package provides Airbnb's .eslintrc as an extensible shared config.</p>
+
+<ul>
+<li>  <a href="https://github.com/airbnb/javascript">Airbnb Style Guide</a>
+</li>
+</ul>
+
+<p><em>Much of this was lifted from the documentation provided. Thanks Devs!</em></p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
