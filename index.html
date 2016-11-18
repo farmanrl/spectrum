@@ -145,6 +145,22 @@
 <li><a href="#sec-4-16">4.16. ./src/core/users</a></li>
 </ul>
 </li>
+<li>
+<a href="#sec-5">5. Project Roadmap</a>
+<ul>
+<li><a href="#sec-5-1">5.1. Testing, testing, testing</a></li>
+<li>
+<a href="#sec-5-2">5.2. Refactor initial prototype</a>
+<ul>
+<li><a href="#sec-5-2-1">5.2.1. Navigation</a></li>
+<li><a href="#sec-5-2-2">5.2.2. Projects</a></li>
+<li><a href="#sec-5-2-3">5.2.3. Users</a></li>
+<li><a href="#sec-5-2-4">5.2.4. Home</a></li>
+<li><a href="#sec-5-2-5">5.2.5. Refine user authentication/profile creation</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 
@@ -651,8 +667,6 @@ merged into the locationBeforeTransitions property of the routing state.</p>
 
 <p><code>rootElement</code> is the element that all components are composed to.</p>
 
-<p><code>syncedHistory</code></p>
-
 <pre><code>function render(Root) {
   ReactDOM.render(
     &lt;AppContainer&gt;
@@ -881,6 +895,81 @@ Passes through our <code>reducers</code> as well as an <code>initialState</code>
 
 <p>Holds our <code>actions</code>, <code>types</code>, <code>reducer</code>, <code>selectors</code>, and <code>models</code> for Redux to control
 <code>user</code> <code>state</code> and <code>actions</code>.</p>
+
+<h1>
+<a id="project-roadmap" class="anchor" href="#project-roadmap" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project Roadmap<a id="sec-5" name="sec-5"></a>
+</h1>
+
+<h2>
+<a id="testing-testing-testing" class="anchor" href="#testing-testing-testing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Testing, testing, testing<a id="sec-5-1" name="sec-5-1"></a>
+</h2>
+
+<p><strong>Jasmine, Redux, Firebase</strong></p>
+
+<p>Our application is always in need of more tests!
+Although it may not seems glamorous, testing is one of the most important parts of
+building large scale software. If we ever want to add new features, go back and change
+our code, or try out new systems, then testing will make it easy to see if what we've
+written behaves the way we expect, and whether it will break any other parts of our app.
+In addition, writing tests is one of the best ways to get familiar with a project,
+understanding all the bits and pieces and how they fit together.</p>
+
+<p>Ideally, we will build our app under the principle of 'Test-Driven Development', which
+is the process of writing tests that will fail, then writing code to make those tests
+pass, then writing more tests, and so on and so forth.</p>
+
+<p>This seems bothersome in the short term, but will pay off in the long term.</p>
+
+<h2>
+<a id="refactor-initial-prototype" class="anchor" href="#refactor-initial-prototype" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Refactor initial prototype<a id="sec-5-2" name="sec-5-2"></a>
+</h2>
+
+<p><strong>React, Firebase, Redux, Router</strong></p>
+
+<p>This app was first created as a rapid prototype, with buggy or incomplete features.
+Our first goal is to refactor that initial prototype under our new framework,
+with extended, bug-free functionality.</p>
+
+<h3>
+<a id="navigation" class="anchor" href="#navigation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Navigation<a id="sec-5-2-1" name="sec-5-2-1"></a>
+</h3>
+
+<p>We need to create a tabbed interface for navigating through the various pages of our
+app. Home, Project Feed, and User Feed will be our initial pages.</p>
+
+<h3>
+<a id="projects" class="anchor" href="#projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Projects<a id="sec-5-2-2" name="sec-5-2-2"></a>
+</h3>
+
+<p>Getting projects implemented is our first step for this goal. We have the projects
+in our database correctly rendering in our feed, but we need to develop additional
+interactions, and the actions, reducers, and selectors to facilitate those
+interactions.</p>
+
+<h3>
+<a id="users" class="anchor" href="#users" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Users<a id="sec-5-2-3" name="sec-5-2-3"></a>
+</h3>
+
+<p>Once we're completely satisfied with how projects are handled, then we will begin
+implementing our Users. This will be handled very similar to Projects implementation,
+with a few key differences. But once Projects are done, Users should follow quickly.</p>
+
+<h3>
+<a id="home" class="anchor" href="#home" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Home<a id="sec-5-2-4" name="sec-5-2-4"></a>
+</h3>
+
+<p>Once we've implemented Projects and Users, we can focus on our landing page for the
+application. This will be pretty basic at first, but Home will be an important
+focus going forward.</p>
+
+<h3>
+<a id="refine-user-authenticationprofile-creation" class="anchor" href="#refine-user-authenticationprofile-creation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Refine user authentication/profile creation<a id="sec-5-2-5" name="sec-5-2-5"></a>
+</h3>
+
+<p><strong>React, Firebase, Redux</strong></p>
+
+<p>The process of authentication and then profile creation should be streamlined to
+avoid confusion.</p>
 
 <p><em>Much of this was lifted from existing documentation. Thanks Devs!</em></p>
 
